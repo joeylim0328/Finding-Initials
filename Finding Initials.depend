@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1542350965 source:c:\users\user\documents\programming\finding initials\main.cpp
+	<iostream>
+	<string>
+
+1542350966 source:d:\documents\programming\finding initials\main.cpp
+	<iostream>
+	<string>
+
