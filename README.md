@@ -1,5 +1,5 @@
 # Finding-Initials
-This is a simple program that helps to retrieve the initials of a person's name. The program is implemented in C++.
+This is a simple program that helps to retrieve the initials of a person's name. The program is implemented in C++. 
 
 # Screenshot
 ### Interface of program
@@ -7,3 +7,6 @@ This is a simple program that helps to retrieve the initials of a person's name.
 
 ### Sample input & output
 ![screenshot2](/screenshots/ss_2.PNG?raw=true)
+
+# Others
+The program is built using Codeblocks V16.01.
