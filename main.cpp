@@ -1,20 +1,23 @@
 //this program is to print out the initials.
 //if the name is written in lowercase, it will automatically be converted to uppercase
 #include <iostream>
-#include <string>
 //to use getline
+#include <string>
+#include <sstream>
+
 using namespace std;
 
 void getInitials(string s){
-    for(int i=0;i<s.size();i++){
-        if(s[i]== s[0]){
-            cout<< (char)(toupper(s[i])) << ".";
-        }
-        else if(s[i]==' '){
-            cout<< (char)(toupper(s[i+1]))<< ".";
-            //when 'space' is detected, it will take the letter that is right after the 'space'
-        }
-        else{}
+
+    istringstream ss(s); //extract each word in the sentence
+    string first_name, last_name; //for storing each word
+
+    ss >> first_name;
+    cout<<first_name<<".";
+
+    while (ss >> last_name){
+        // print the read word
+        cout << (char)toupper(last_name[0])<< ".";
     }
 }
 
@@ -29,5 +32,7 @@ int main()
     getInitials(name);
     endl(cout);
     cout<< "*********"<<endl;
+
+    return 0;
 
 }
